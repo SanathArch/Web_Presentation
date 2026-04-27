@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "default_storage": "memory",
+  "storage": {
+    "memory": {},
+    "sqlite": {
+      "database": "subscribers.db"
+    },
+    "postgresql": {
+      "host": "localhost",
+      "port": 5432,
+      "database": "newsletter_db",
+      "user": "newsletter_user",
+      "password": ""
+    }
+  },
+  "email_validation": {
+    "max_mx_records": 5,
+    "timeout_seconds": 30
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "newsletter.log"
+  },
+  "backup": {
+    "directory": "backup_subscribers",
+    "interval_hours": 24
+  },
+  "welcome": {
+    "template": "welcome_template.txt"
+  }
+}
