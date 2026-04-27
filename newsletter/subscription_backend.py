@@ -5,6 +5,7 @@ Handles email collection and subscriber management
 
 import requests
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 import smtplib
@@ -12,6 +13,12 @@ from datetime import datetime
 import json
 import os
 import sqlite3
+import threading
+import time
+import schedule
+
+app = Flask(__name__)
+CORS(app) # Enable CORS for all routes
 
 # Configuration
 SMTP_SERVER = "smtp.gmail.com"
@@ -20,9 +27,15 @@ EMAIL_ADDRESS = "your-email@gmail.com"
 EMAIL_PASSWORD = "your-app-password"
 ADMIN_EMAIL = "admin@architecture-news.com"
 
+# Storage Configuration
+DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'newsletter_data')
+DB_PATH = os.path.join(DATA_DIR, 'subscribers.db')
+MOCK_EMAIL_LOG_PATH = os.path.join(DATA_DIR, 'sent_emails.log')
+
 # Database initialization
 def init_database():
-    conn = sqlite3.connect('subscribers.db')
+    os.makedirs(DATA_DIR, exist_ok=True)
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
     cursor.execute('''
@@ -48,7 +61,15 @@ def init_database():
     
     conn.commit()
     conn.close()
-    print("✅ Database initialized")
+    print("✅ Database initialized at", DB_PATH)
+
+def mock_send_email(recipient, content, subject):
+    """Mocks sending an email by writing it to a log file."""
+    timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    log_entry = f"[{timestamp}] To: {recipient} | Subject: {subject}\n{content}\n{'-'*50}\n"
+    with open(MOCK_EMAIL_LOG_PATH, 'a', encoding='utf-8') as f:
+        f.write(log_entry)
+    print(f"✅ Mock email saved for {recipient}")
 
 # Subscribe API endpoint
 @app.route('/api/subscribe', methods=['POST'])
@@ -63,7 +84,7 @@ def subscribe():
         return jsonify({'success': False, 'message': 'Invalid email format'}), 400
     
     # Check if already subscribed
-    conn = sqlite3.connect('subscribers.db')
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
     try:
@@ -96,8 +117,11 @@ def subscribe():
 
 # Daily newsletter sending
 @app.route('/api/send-daily', methods=['POST'])
+def send_daily_endpoint():
+    return send_daily_newsletter()
+
 def send_daily_newsletter():
-    conn = sqlite3.connect('subscribers.db')
+    conn = sqlite3.connect(DB_PATH)
     cursor = conn.cursor()
     
     # Get active subscribers
@@ -131,24 +155,21 @@ bringing unprecedented efficiency while maintaining design excellence.
         
         # Send newsletter
         try:
-            send_email(email, news_content, "Architecture News Daily")
-            print(f"✅ Newsletter sent to {email}")
+            mock_send_email(email, news_content, "Architecture News Daily")
+            # For real email, you would replace mock_send_email with your actual send_email logic
+            # send_email(email, news_content, "Architecture News Daily")
         except Exception as e:
             print(f"❌ Failed to send to {email}: {e}")
     
+    conn.close()
     return jsonify({
         'success': True,
         'sent_count': len(subscribers),
-        'subscribers': subscribers
+        'subscribers': [s[0] for s in subscribers]
     })
 
 # Send welcome email
 def send_welcome_email(recipient):
-    msg = MIMEMultipart()
-    msg['From'] = EMAIL_ADDRESS
-    msg['To'] = recipient
-    msg['Subject'] = "Welcome to Architecture News!"
-    
     body = f"""
 Congratulations on subscribing to Architecture News!
 
@@ -163,23 +184,31 @@ Thank you for subscribing!
 
 Best regards,
 The Architecture News Team
-    """
+"""
+    # Use mock email
+    mock_send_email(recipient, body, "Welcome to Architecture News!")
+
+def run_scheduler():
+    """Run background scheduler for daily emails."""
+    # Schedule the job every day at a specific time (e.g., 08:00)
+    # For testing, we can schedule it every minute, but we'll use daily here.
+    schedule.every().day.at("08:00").do(send_daily_newsletter)
     
-    msg.attach(MIMEText(body, 'plain'))
-    
-    try:
-        s = smtplib.SMTP(SMTP_SERVER, SMTP_PORT)
-        s.starttls()
-        s.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
-        text = msg.as_string()
-        s.sendmail(EMAIL_ADDRESS, [recipient], text)
-        s.quit()
-        print(f"✅ Welcome email to {recipient}")
-    except Exception as e:
-        print(f"❌ Failed to send welcome: {e}")
+    print("✅ Background scheduler started")
+    while True:
+        schedule.run_pending()
+        time.sleep(60)
 
 if __name__ == '__main__':
     init_database()
+    
+    # Start scheduler thread
+    scheduler_thread = threading.Thread(target=run_scheduler, daemon=True)
+    scheduler_thread.start()
+    
     print("✅ Newsletter system backend running on http://localhost:5000")
     print(f"   Subscribe: POST /api/subscribe")
     print(f"   Send Daily: POST /api/send-daily")
+    
+    # Run Flask app
+    app.run(host='0.0.0.0', port=5000)
