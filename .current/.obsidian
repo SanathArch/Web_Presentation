@@ -1,0 +1,84 @@
+# 📰 ARCHITECTURE NEWS UPDATE - 24 HOURS
+## Date: $(date +%Y-%m-%d)
+## Last Updated: Daily Manual Process
+
+---
+
+## 📊 CURRENT SCRAPING TOPICS (12 TOTAL)
+1. CLIMATE SOLUTIONS & RESEARCH
+2. RESEARCH PAPERS
+3. FIELD STUDIES
+4. GREEN CERTIFICATION
+5. MATERIALS & VERNACULAR WISDOM
+6. NEW MATERIALS
+7. ARCHITECT QUOTES
+8. VERNACULAR KNOWLEDGE
+9. AI + ARCHITECTURE
+10. GENERATIVE DESIGN
+11. MACHINE LEARNING
+12. PARAMETRIC MODELING
+
+---
+
+## ⏰ 24-HOUR UPDATE SYSTEM
+
+### Status: ❌ NOT AUTOMATED
+### Reason: AI Text Model (No Background Scheduling)
+
+### Available Options:
+
+#### 1. MANUAL UPDATE (RECOMMENDED)
+- Set calendar reminder for tomorrow
+- Run scraping command
+- Review and save updates
+- ✅ Simple, reliable, controlled
+
+#### 2. AUTOMATION SCRIPT (CREATE)
+- I'll write Python script
+- You schedule via cron/task scheduler
+- Automatically runs daily
+- ✅ Hands-off after setup
+
+#### 3. WEBHOOK TRIGGERS (ADVANCED)
+- Use Zapier/IFTTT
+- Schedule 24-hour interval
+- Call me to run scraping
+- ✅ Fully automated workflow
+
+---
+
+## 🖼️ FILE STRUCTURE (UPDATED)
+```
+H:/My Drive/Proffessional_Practice/Website/.current/
+├── scraping_content.txt     (12 topics)
+├── .obsidian                 (memory trace)
+├── news_archive/             (daily saves)
+│   ├── 2024-12-XX/
+│   └── 2024-12-XX-1/
+└── scripts/                  (automation code)
+```
+
+---
+
+## ✏️ TO-DO FOR TOMORROW
+- [ ] Set calendar reminder for 24-hour update
+- [ ] Run scraping command manually
+- [ ] Review and archive results
+- [ ] Update .obsidian with latest data
+- [ ] (Optional) Set up automation script
+
+---
+
+## 📝 NEXT COMMANDS
+
+Ask for:
+1. 📅 Create automation script?
+2. ⏰ Set up calendar reminders?
+3. 🔗 Build webhook integration?
+4. 📁 Create news_archive folder?
+5. 📊 Generate daily report template?
+
+---
+
+**Last Update:** $(date)
+**Memory Stored:** H:/My Drive/Proffessional_Practice/Website/.current/.obsidian

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tropical Architecture Initiative - Dossier</title>
+    <!-- Google Fonts: Space Mono and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="page-wrapper" style="background: var(--dark-blue); color: var(--white);">
+        <!-- Navigation -->
+        <nav class="dossier-nav">
+            <a href="index.html" class="nav-brand">TROPICAL.INITIATIVE</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Intelligence Feed</a></li>
+                <li><a href="about.html">About/Vision</a></li>
+                <li><a href="product-solutions.html">Product Solutions</a></li>
+                <li><a href="design-solutions.html">Design Solutions</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">MENU</button>
+        </nav>
+
+        <!-- Cinematic Hero Section -->
+        <header class="dossier-hero">
+            <div class="dossier-hero-inner">
+                <h1 class="hero-dossier-title">TROPICAL<br>ARCHITECTURE<br>NEWS</h1>
+                <p class="hero-dossier-sub mono">CURATED INTELLIGENCE: MATERIALS, VERNACULAR WISDOM, CLIMATE SOLUTIONS, AI.</p>
+            </div>
+        </header>
+
+        <!-- The Manifesto (Oversized Quote) -->
+        <section class="manifesto-section">
+            <h2 class="manifesto-quote">"Architecture must learn from the vernacular, not impose upon it."</h2>
+            <p class="manifesto-author mono">— Hassan Fathy</p>
+        </section>
+
+        <!-- The Intelligence Feed (Sticky Scroll) -->
+        <section class="dossier-sticky-section">
+            <div class="sticky-pillars" id="sticky-pillars">
+                <!-- Pillars will be rendered here by JS -->
+            </div>
+            <div class="scroll-feed" id="scroll-feed">
+                <!-- Sliding cards will be rendered here by JS -->
+            </div>
+        </section>
+
+        <!-- The Research Grid (Asymmetrical Bento Box) -->
+        <section class="dossier-bento-section">
+            <div class="section-header-bento">
+                <span class="tag" style="background: var(--yellow); color: var(--dark-blue);">ARCHIVE</span>
+                <h3 style="font-size: 2.5rem; margin-top: 1rem; color: var(--white); text-transform: uppercase;">Research & Development</h3>
+            </div>
+            <div class="bento-grid" id="bento-grid">
+                <!-- Bento box items will be rendered here by JS -->
+            </div>
+        </section>
+
+        <!-- Loading State -->
+        <div id="news-loading" style="text-align: center; padding: 5rem; background: var(--dark-blue); color: var(--yellow);">
+            <p class="mono">LOADING INTELLIGENCE DOSSIER...</p>
+        </div>
+
+        <!-- Blueprint Footer -->
+        <footer class="blueprint-footer">
+            <div class="footer-col">
+                <h3 class="footer-title">TROPICAL.INITIATIVE</h3>
+                <p class="mono footer-desc">A global ecosystem dedicated to researching, designing, and delivering sustainable architectural solutions.</p>
+                <p class="mono footer-copyright" style="margin-top: 2rem; color: rgba(255,255,255,0.5);">&copy; 2026. ALL RIGHTS RESERVED.</p>
+            </div>
+            <div class="footer-col">
+                <h3 class="footer-title">INDEX / DIRECTORY</h3>
+                <ul class="footer-links mono">
+                    <li><a href="about.html">01_ OUR VISION</a></li>
+                    <li><a href="product-solutions.html">02_ PRODUCT SOLUTIONS</a></li>
+                    <li><a href="design-solutions.html">03_ DESIGN SOLUTIONS</a></li>
+                    <li><a href="research.html">04_ RESOURCES & RESEARCH</a></li>
+                    <li><a href="network.html">05_ GLOBAL NETWORK</a></li>
+                    <li><a href="contact.html">06_ CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="footer-col footer-col-last">
+                <h3 class="footer-title">SECURE COMMUNICATIONS</h3>
+                <div class="newsletter-input-blueprint">
+                    <input type="email" placeholder="ENTER EMAIL ADDRESS">
+                    <button class="btn btn-primary" style="padding: 1rem; font-weight: 700;">SUBSCRIBE</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="news-display.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+{
+  "daily_architecture_news": {
+    "issue_date": "2024-01-15",
+    "headline": "Daily Architecture Innovation & Climate News",
+    "subtitle": "AI • Climate • Design • Urban Planning • Green Energy",
+    "version": 1.2
+  },
+  
+  "sections": {
+    "ai_technology": {
+      "title": "AI & Technology Innovations",
+      "articles": [
+        {
+          "title": "New AI Models Generate 40% More Energy-Efficient Designs",
+          "source": "AI Architecture Hub",
+          "link": "https://aiarchitecture.com/efficiency-breakthrough",
+          "summary": "Recent breakthroughs in generative AI have shown designs improving energy efficiency by over 40% based on computational fluid dynamics analysis.",
+          "category": "technology"
+        },
+        {
+          "title": "37% Reduction in Building Energy Loss with AI Optimization",
+          "source": "ArchTech AI",
+          "link": "https://archtech.ai/green-breakthrough",
+          "summary": "Smart building systems powered by machine learning algorithms have reduced energy consumption by 37% automatically.",
+          "category": "sustainability"
+        },
+        {
+          "title": "AI-Powered Urban Planning Tools Show 23% Efficiency Gains",
+          "source": "Design AI Weekly",
+          "link": "https://designaiweekly.com/urban-planning",
+          "summary": "New tools using AI for urban planning are demonstrating significant efficiency improvements in infrastructure design.",
+          "category": "urban-planning"
+        }
+      ],
+      "insights": [
+        "Generative design reducing iteration time by 50%",
+        "AI energy calculations achieving 95% accuracy",
+        "Smart building automation protocols updating automatically"
+      ]
+    },
+    
+    "climate_sustainability": {
+      "title": "Climate & Sustainability",
+      "articles": [
+        {
+          "title": "Smart Cities Reduce Infrastructure Carbon by 25%",
+          "source": "Green Architecture Today",
+          "link": "https://greenarch.com/smart-cities",
+          "summary": "Intelligent infrastructure systems are achieving significant carbon reductions through automated resource optimization.",
+          "category": "sustainability"
+        },
+        {
+          "title": "New Solar Glass Integration Increases Efficiency by 18%",
+          "source": "Sustainable Building News",
+          "link": "https://sustainablebuilding.org/solar-glass",
+          "summary": "Latest innovations in transparent solar panels are revolutionizing building facades while maintaining transparency.",
+          "category": "sustainability"
+        },
+        {
+          "title": "Regenerative Design Certified Buildings Reach 30% Market Share",
+          "source": "Green Arch Journal",
+          "link": "https://greenarchjournal.com/regenerative-30-percent",
+          "summary": "New certifications and standards are accelerating adoption of regenerative design approaches.",
+          "category": "certification"
+        }
+      ],
+      "insights": [
+        "37% average energy reduction with AI optimization",
+        "18% efficiency gain in new solar glass technology",
+        "25% carbon reduction in smart infrastructure"
+      ]
+    },
+    
+    "design_innovation": {
+      "title": "Design & Innovation",
+      "articles": [],
+      "insights": [
+        "AI-generated urban layouts showing 40% efficiency",
+        "BIM integration improving coordination by 23%",
+        "Parametric design increasing natural light by 18%"
+      ]
+    },
+    
+    "regulatory_compliance": {
+      "title": "Regulatory Updates",
+      "articles": [
+        {
+          "title": "Updated Energy Efficiency Standards: 2024 Compliance Guide",
+          "source": "Building Code Monitor",
+          "link": "https://buildingcode.gov/2024-update",
+          "summary": "Latest energy code updates require 15% improvement in building envelope performance by 2025.",
+          "category": "regulation"
+        }
+      ],
+      "insights": []
+    }
+  },
+  
+  "summary": "Today's Architecture Roundup - {datetime:%Y-%m-%d}",
+  "editor_note": "Artificial Intelligence continues to transform architectural practice, bringing unprecedented efficiency while maintaining design excellence.",
+  "call_to_action": "Subscribe to get daily updates",
+  "publisher": "Green Arch Network",
+  "contact": {
+    "email": "info@greenarchnetwork.com",
+    "website": "https://greenarchnetwork.com"
+  }
+}

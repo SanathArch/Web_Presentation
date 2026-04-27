@@ -1,0 +1,87 @@
+{
+  "newsletter_name": "Daily Architecture Roundup",
+  "publisher": "Green Arch Network",
+  "version": 2.0,
+  
+  "schedule": {
+    "frequency": "daily",
+    "time": "06:00",  // 6 AM
+    "timezone": "UTC",
+    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    "run_id": 4
+  },
+  
+  "python_script": {
+    "path": "news_generator.py",
+    "arguments": [
+      "--content-format json",
+      "--source-database news_archive.db",
+      "--output-format html",
+      "--sections ai_technology,climate_sustainability,design_innovation,regulatory_compliance"
+    ]
+  },
+  
+  "content_sources": {
+    "primary_db": "news_archive.db",
+    "backup_sources": [
+      {"name": "web_scraper", "url": "https://archive.org/news"},
+      {"name": "api_feed", "endpoint": "https://archdaily/api/latest"}
+    ]
+  },
+  
+  "content_template": {
+    "format": "json",
+    "template_path": "newsletter_content.json",
+    "sections": [
+      "ai_technology",
+      "climate_sustainability", 
+      "design_innovation",
+      "regulatory_compliance"
+    ]
+  },
+  
+  "output": {
+    "format": "html",
+    "path": "output/newsletter.html",
+    "template": "newsletter_template.html"
+  },
+  
+  "sections": {
+    "ai_technology": {
+      "name": "AI & Technology Innovations",
+      "limit": 3,
+      "priority": "high"
+    },
+    "climate_sustainability": {
+      "name": "Climate & Sustainability",
+      "limit": 3,
+      "priority": "high"
+    },
+    "design_innovation": {
+      "name": "Design & Innovation",
+      "limit": 2,
+      "priority": "medium"
+    },
+    "regulatory_compliance": {
+      "name": "Regulatory Updates",
+      "limit": 2,
+      "priority": "medium"
+    }
+  },
+  
+  "automation": {
+    "scheduler": "cron",
+    "crontab": "0 6 * * * /usr/bin/python3 H:/My%20Drive/Proffessional_Practice/Website/newsletter/news_generator.py --content-format json --source-database news_archive.db --output-format html --sections ai_technology,climate_sustainability,design_innovation,regulatory_compliance",
+    "webhook": {
+      "enabled": true,
+      "url": "https://greenarchnetwork.com/api/webhook",
+      "events": ["newsletter_ready", "delivery_status", "read_status"]
+    }
+  },
+  
+  "monitoring": {
+    "enabled": true,
+    "check_interval": "15m",
+    "webhook": true
+  }
+}

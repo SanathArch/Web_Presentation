@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tropical Architecture Initiative</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        <nav>
+            <a href="index.html" class="nav-brand">TROPICAL.INITIATIVE</a>
+                        <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About/Vision</a></li>
+                <li><a href="product-solutions.html">Product Solutions</a></li>
+                <li><a href="design-solutions.html">Design Solutions</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="network.html">Network</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">MENU</button>
+        </nav>
+
+        <div class="grid-container">
+            <!-- Form Section -->
+            <div class="grid-item col-span-8 content-block" style="border-bottom: var(--border);">
+                <span class="section-label">COMMUNICATION HUB</span>
+                <h1 style="font-size: 4rem; margin-bottom: 2rem;">REACH OUT.</h1>
+                <p class="mono" style="margin-bottom: 3rem; max-width: 600px;">Use the form below to reach the core team for consulting, media inquiries, or technical questions regarding tropical architecture.</p>
+                
+                <form style="max-width: 600px;">
+                    <div class="form-group">
+                        <label for="name">FULL NAME</label>
+                        <input type="text" id="name" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="email" id="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">MESSAGE</label>
+                        <textarea id="message" rows="6" placeholder="Your inquiry here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">SEND TRANSMISSION</button>
+                </form>
+            </div>
+
+            <!-- Side Panels -->
+            <div class="grid-item col-span-4" style="padding: 0; border-bottom: var(--border); display: flex; flex-direction: column;">
+                
+                <div style="padding: 3rem; border-bottom: var(--border); background: var(--dark-blue); color: var(--white); flex: 1;">
+                    <span class="section-label" style="color: var(--yellow);">STAY UPDATED</span>
+                    <h3 style="margin-bottom: 1rem;">NEWSLETTER</h3>
+                    <p class="mono" style="margin-bottom: 2rem;">Join our mailing list for regular updates on research, events, and new products.</p>
+                    <div class="newsletter-input" style="border-color: var(--white);">
+                        <input type="email" placeholder="ENTER EMAIL" style="background: transparent; color: var(--white);">
+                        <button class="btn" style="border-left-color: var(--white); background: var(--white); color: var(--dark-blue);">JOIN</button>
+                    </div>
+                </div>
+
+                <div style="padding: 3rem; flex: 1;">
+                    <span class="section-label">LINKS</span>
+                    <h3 style="margin-bottom: 1rem;">SOCIAL MEDIA</h3>
+                    <p class="mono" style="margin-bottom: 2rem;">Connect with the initiative to foster a broader online community.</p>
+                    <ul class="mono" style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <li><a href="#" style="text-decoration: underline;">LINKEDIN ↗</a></li>
+                        <li><a href="#" style="text-decoration: underline;">TWITTER/X ↗</a></li>
+                        <li><a href="#" style="text-decoration: underline;">INSTAGRAM ↗</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <h3 class="footer-title">TROPICAL.INITIATIVE</h3>
+                <p class="mono">A global ecosystem dedicated to researching, designing, and delivering sustainable architectural solutions.</p>
+            </div>
+            <div>
+                <h3 class="footer-title">INDEX</h3>
+                                <ul class="footer-links">
+                    <li><a href="about.html">Our Vision</a></li>
+                    <li><a href="product-solutions.html">Product Solutions</a></li>
+                    <li><a href="design-solutions.html">Design Solutions</a></li>
+                    <li><a href="research.html">Resources & Research</a></li>
+                    <li><a href="network.html">Global Network</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="footer-title">NEWSLETTER</h3>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="ENTER EMAIL">
+                    <button class="btn btn-primary" style="padding: 1rem;">JOIN</button>
+                </div>
+                <p class="mono" style="margin-top: 1rem; color: #666; font-size: 0.7rem;">&copy; 2026. ALL RIGHTS RESERVED.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

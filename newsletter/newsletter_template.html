@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{newsletter_name}}</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8f4f8 100%);
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .header {
+            position: relative;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .issue-date {
+            position: relative;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        .content {
+            padding: 40px 20px;
+        }
+        
+        .article-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #1e3c72;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+        
+        .article-card h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .article-card p {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .article-card .source {
+            font-size: 0.8em;
+            color: #888;
+            font-style: italic;
+        }
+        
+        .article-card a {
+            color: #1e3c72;
+            text-decoration: none;
+        }
+        
+        .section-divider {
+            background-image: linear-gradient(to right, transparent 49.5%, #1e3c72 49.5%, #1e3c72 50.5%, transparent 50.5%);
+            height: 2px;
+            margin: 40px 0;
+            border: none;
+        }
+        
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .section.ai_technology {
+            border-left: 4px solid #673ab7;
+        }
+        
+        .section.climate_sustainability {
+            border-left: 4px solid #4caf50;
+        }
+        
+        .section.design_innovation {
+            border-left: 4px solid #ff9800;
+        }
+        
+        .section.regulatory_compliance {
+            border-left: 4px solid #f44336;
+        }
+        
+        .section h2 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background-color: #1e3c72;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(30, 60, 114, 0.4);
+        }
+        
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .article-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .editor-note {
+            background: #fff3cd;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{newsletter_name}}</h1>
+            <p>{{publisher}} - Your daily dose of architecture innovation</p>
+            <div class="issue-date">{{summary}}</div>
+        </div>
+        
+        <div class="content">
+            {{editor_note}}
+            
+            {{content_body}}
+            
+            <div class="section-divider"></div>
+            
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="{{subscription_url}}" class="btn">
+                    <span style="margin-right: 10px;"><strong>✉️</strong></span>
+                    Join Our Newsletter
+                </a>
+                <a href="{{website}}" class="btn">
+                    Visit Our Website
+                </a>
+            </div>
+            
+            <div class="contact-info">
+                <p>
+                    Email us at <strong>{{contact.email}}</strong> or visit <strong>{{contact.website}}</strong><br>
+                    © 2025 {{publisher}}. All rights reserved.
+                </p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Green Arch Network - Transforming Architecture Through Innovation</p>
+        </div>
+    </div>
+</body>
+</html>

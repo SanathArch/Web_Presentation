@@ -1,0 +1,60 @@
+# Detailed Breakdown For Website Creation: Tropical Architecture Initiative
+
+Based on the "Website_Vision" document, the following is a detailed structural layout for the website, outlining each page, its purpose, and the sub-topics/features to be included.
+
+## Main Navigation Structure
+- **Home**
+- **About / Vision**
+- **Solutions (Design & Products)**
+- **Network & Locations**
+- **Resources & Research**
+- **Contact**
+
+---
+
+### 1. Home (Landing Page)
+**Description:** The gateway to the website, designed to immediately communicate the mission of the initiative and direct users to key areas. It should be visually inspiring and action-oriented.
+**Sub-topics & Features:**
+- **Hero Text Block:** A stark, typography-driven brutalist hero section spanning the full width, focusing entirely on the mission without distracting imagery. Includes a strong tagline such as *"Building Resilience."*.
+- **Intro Snippet:** A brief, clear mission statement. Example: *"We empower communities in tropical regions with climate-adapted architecture. Our platform shares research, design guidelines, and innovative products to combat heat, humidity, and storms."*
+- **Key Call-to-Action (CTA) Links/Buttons:** Directing users to crucial sections: "Tropical Challenges" and "View Solutions".
+- **Tropical Climate Department:** A dedicated section explaining the fundamentals of tropical climates, the specific problems and challenges faced in these environments, and an overview of tropical climate architecture, including examples of architectural buildings successfully dealing with the tropical climate.
+
+### 2. About / Vision
+**Description:** This page delves into the "why" and "who" behind the project. It sets the context of the harsh tropical climate challenges and introduces the team working towards solutions.
+**Sub-topics & Features:**
+- **Mission and Vision Statement:** Articulates the overarching goals of the initiative. Our vision is inclined to create an ecosystem for solutions related to the tropical climate. This integrates the product design aspect tailored for this specific climate, the practical design solutions developed, and the research aspect which deals with these solutions from a theoretical standpoint.
+- **Background Context:** A summary of the unique challenges of tropical climates (e.g., high humidity, intense heat, heavy rainfall) and why traditional and passive architectural approaches matter. 
+- **Team & Partners:** Profiles, bios, or logos of the collaborating institutions (e.g., universities, NGOs, green building networks) driving the research and implementation.
+
+### 3. Design & Products
+**Description:** The core repository of practical "cheatcodes" and tangible products. This page translates architectural research into actionable design guidelines and physical solutions.
+**Sub-topics & Features:**
+- **Design Cheatcodes:** Highly visual, illustrated guidelines detailing best practices for tropical design (e.g., "Maximize cross-ventilation: use 20% facade porosity"). Can include downloadable PDFs or interactive visual guides.
+- **Product Prototypes & Sales:** A list of tested and built projects/products that users can purchase. This section is the economic engine of the site—generating profit through the sale of design solutions to sustain the entire ecosystem.
+- **Project Status Distinctions:** Clear categorization between "On-going Projects" (currently in development) and "Completed Solutions" (finished projects moved to the available products list).
+- **Case Examples Preview:** Short summaries of exemplary, implemented projects utilizing these solutions, with links to deeper case studies.
+
+### 4. Resources & Research
+**Description:** The academic and technical backbone of the website, providing rigorous data, peer-reviewed studies, and tools for professionals and researchers.
+**Sub-topics & Features:**
+- **Publications Library:** A display of our research work and design research. Each entry will feature the abstract of the main research topic alongside a single, clear download option for the full document.
+- **Detailed Case Studies:** Comprehensive reports analyzing past and current projects (e.g., Sabena Towers in DR Congo, bioclimatic social housing in Reunion Island).
+- **Data Tools:** Practical calculators or charts for architects, such as thermal comfort calculators, climate data charts, or links to recognized standards (e.g., ASHRAE 55, ISO 15927).
+- **News / Blog:** Regular updates on project milestones, upcoming workshops, field feedback, and new research findings.
+
+### 5. Network & Locations
+**Description:** This section visualizes the global reach and application of the initiative. It connects the theories and products to real-world pilot sites and communities.
+**Sub-topics & Features:**
+- **Interactive Map:** A dynamic global map showing pilot and demonstration sites across the tropics (e.g., Southeast Asia, West Africa, the Amazon, the Caribbean). Users can click on pins to view the local climate zone, partnering organization, and project status.
+- **Architectural Firms & Contacts:** A comprehensive list of architectural firms dealing with tropical climates and similar design solutions. It will highlight their general building designs for these conditions, specific design elements used, and provide their contact information for working or internship purposes.
+- **Academic Partnerships:** Details on Memorandums of Understanding (MOUs) and collaborations with universities.
+- **Location Profiles:** In-depth highlights of specific pilot locations (e.g., *"Jakarta, Indonesia: Urban heat mitigation study"*), detailing local challenges and specific interventions applied.
+- **Join Us (Community Call-to-Action):** An invitation for researchers, local builders, or communities in similar climate zones to participate or propose new pilot locations.
+
+### 6. Contact
+**Description:** The communication hub for engaging with the project team, seeking partnerships, or staying updated.
+**Sub-topics & Features:**
+- **Contact Form:** A direct way to reach the core team for consulting, media inquiries, or technical questions.
+- **Newsletter Sign-up:** A mailing list subscription for regular updates on research, events, and new products.
+- **Social Media Links:** Connections to the initiative's social platforms to foster a broader online community.

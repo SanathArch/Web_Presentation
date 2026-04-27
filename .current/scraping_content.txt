@@ -1,0 +1,18 @@
+{
+  "web_scraping_topics": {
+    "architecture": [
+      "CLIMATE SOLUTIONS & RESEARCH",
+      "RESEARCH PAPERS",
+      "FIELD STUDIES",
+      "GREEN CERTIFICATION",
+      "MATERIALS & VERNACULAR WISDOM",
+      "NEW MATERIALS",
+      "ARCHITECT QUOTES",
+      "VERNACULAR KNOWLEDGE",
+      "AI + ARCHITECTURE",
+      "GENERATIVE DESIGN",
+      "MACHINE LEARNING",
+      "PARAMETRIC MODELING"
+    ]
+  }
+}
