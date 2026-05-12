@@ -22,11 +22,11 @@ class NewsGenerator:
             {'name': 'De Construct', 'url': 'https://deconstructive.com/rss'}
         ]
         self.categories = [
-            'AI & Technology',
+            'Tropical Design Innovation',
             'Climate & Sustainability',
-            'Design & Innovation',
+            'Vernacular Materials',
             'Urban Planning',
-            'Architecture & Buildings',
+            'Passive Cooling & Ventilation',
             'Green Energy'
         ]
         
@@ -57,48 +57,47 @@ class NewsGenerator:
         all_news.sort(key=lambda x: x['published'], reverse=True)
         return all_news[:10]  # Return top 10
             
-    def fetch_ai_news(self) -> List[Dict]:
-        """Fetch AI-related architecture news"""
-        # Simulating AI design news updates
+    def fetch_tropical_design_news(self) -> List[Dict]:
+        """Fetch tropical architecture design news"""
         return [
             {
-                'source': 'AI Architecture Hub',
-                'title': 'New AI Models Generate 40% More Energy-Efficient Designs',
-                'link': 'https://aiarchitecture.com/efficiency-breakthrough',
-                'description': 'Recent breakthroughs in generative AI have shown designs improving energy efficiency by over 40% based on computational fluid dynamics analysis.',
+                'source': 'Tropical Architecture Hub',
+                'title': 'New Bamboo Treatments Extend Lifespan by 40 Years',
+                'link': 'https://tropicalarch.com/bamboo-breakthrough',
+                'description': 'Recent breakthroughs in natural borate treatments for structural bamboo have shown to dramatically increase durability against moisture and insects.',
                 'published': datetime.now().isoformat()
             },
             {
-                'source': 'ArchTech AI',
-                'title': '37% Reduction in Building Energy Loss with AI Optimization',
-                'link': 'https://archtech.ai/green-breakthrough',
-                'description': 'Smart building systems powered by machine learning algorithms have reduced energy consumption by 37% automatically.',
+                'source': 'Climate Adaptive Design',
+                'title': 'Passive Cooling Techniques Reduce AC Dependency by 70%',
+                'link': 'https://adaptive-design.org/passive-cooling',
+                'description': 'Modern integration of traditional wind catchers and deep overhangs have successfully eliminated the need for air conditioning in new equatorial housing projects.',
                 'published': datetime.now().isoformat()
             },
             {
-                'source': 'Design AI Weekly',
-                'title': 'AI-Powered Urban Planning Tools Show 23% Efficiency Gains',
-                'link': 'https://designaiweekly.com/urban-planning',
-                'description': 'New tools using AI for urban planning are demonstrating significant efficiency improvements in infrastructure design.',
+                'source': 'Equatorial Urbanism',
+                'title': 'Monsoon-Resilient Elevated Structures Become Standard',
+                'link': 'https://equatorialurbanism.com/monsoon-ready',
+                'description': 'New building codes in coastal tropical zones mandate elevated ground floors to combat increasing flood risks.',
                 'published': datetime.now().isoformat()
             }
         ]
     
     def fetch_climate_news(self) -> List[Dict]:
-        """Fetch climate and sustainability news"""
+        """Fetch climate and sustainability news for the tropics"""
         return [
             {
                 'source': 'Green Architecture Today',
-                'title': 'Smart Cities Reduce Infrastructure Carbon by 25%',
-                'link': 'https://greenarch.com/smart-cities',
-                'description': 'Intelligent infrastructure systems are achieving significant carbon reductions through automated resource optimization.',
+                'title': 'Rammed Earth Shows Excellent Thermal Mass in Humid Climates',
+                'link': 'https://greenarch.com/rammed-earth-tropics',
+                'description': 'Studies confirm that stabilized rammed earth walls provide superior indoor comfort in high-humidity tropical environments without mechanical cooling.',
                 'published': datetime.now().isoformat()
             },
             {
                 'source': 'Sustainable Building News',
-                'title': 'New Solar Glass Integration Increases Efficiency by 18%',
-                'link': 'https://sustainablebuilding.org/solar-glass',
-                'description': 'Latest innovations in transparent solar panels are revolutionizing building facades while maintaining transparency.',
+                'title': 'Permeable Paving Mitigates Tropical Urban Heat Island',
+                'link': 'https://sustainablebuilding.org/permeable-paving',
+                'description': 'Large-scale adoption of permeable surfaces has reduced surface temperatures by 4°C in dense tropical cities.',
                 'published': datetime.now().isoformat()
             }
         ]
@@ -120,26 +119,26 @@ class NewsGenerator:
         print("📰 Generating daily newsletter...")
         
         all_news = self.fetch_news()
-        ai_news = self.fetch_ai_news()
+        tropical_news = self.fetch_tropical_design_news()
         climate_news = self.fetch_climate_news()
         regulatory_news = self.fetch_regulatory_updates()
         
         # Generate content
         newsletter = {
             'issue_date': datetime.now().strftime('%Y-%m-%d'),
-            'headline': 'Daily Architecture News & Innovation Update',
-            'subtitle': 'AI • Climate • Design • Urban Planning • Green Energy',
+            'headline': 'Tropical Architecture News & Innovation Update',
+            'subtitle': 'Passive Cooling • Materials • Climate Adaptation • Urban Planning',
             'sections': {}
         }
         
-        # AI Section
-        newsletter['sections']['AI_Technology'] = {
-            'title': 'AI & Technology Innovations',
-            'articles': ai_news[:3],
+        # Tropical Design Section
+        newsletter['sections']['Tropical_Design'] = {
+            'title': 'Tropical Design & Materials',
+            'articles': tropical_news[:3],
             'insights': [
-                'Generative design reducing iteration time by 50%',
-                'AI energy calculations achieving 95% accuracy',
-                'Smart building automation protocols updating automatically'
+                'Bamboo structural treatments extending lifespan significantly',
+                'Passive cooling reducing AC load by up to 70%',
+                'Flood-resilient elevated structures gaining traction'
             ]
         }
         
@@ -177,22 +176,21 @@ class NewsGenerator:
         
         # Editor's Summary
         newsletter['summary'] = f"""
-Today's Architecture Roundup - {datetime.now().strftime('%B %d, %Y')}
+Tropical Architecture Roundup - {datetime.now().strftime('%B %d, %Y')}
 
 === TOP STORIES:
 {self._format_articles(all_news[:5])}
 
-=== CLIMATE BREAKTHROUGHS:
+=== CLIMATE & SUSTAINABILITY:
 {self._format_articles(climate_news[:3])}
 
-=== AI INNOVATIONS:
-{self._format_articles(ai_news[:2])}
+=== TROPICAL DESIGN INNOVATIONS:
+{self._format_articles(tropical_news[:2])}
 
 === EDITOR'S NOTE:
-Artificial Intelligence continues to transform architectural practice, 
-bringing unprecedented efficiency while maintaining design excellence.
-Our subscribers now have access to AI-powered analytics showing 40% 
-improvements in energy efficiency for building designs.
+Designing for the tropics requires a delicate balance of vernacular wisdom
+and modern innovation. By focusing on passive cooling, resilient materials,
+and climate-adaptive strategies, we can build a more sustainable future.
 
 Stay informed, stay ahead.
 

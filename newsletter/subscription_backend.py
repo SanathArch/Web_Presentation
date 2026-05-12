@@ -17,6 +17,11 @@ import threading
 import time
 import schedule
 
+# Import news generator
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from news_generator import news_generator
+
 app = Flask(__name__)
 CORS(app) # Enable CORS for all routes
 
@@ -128,36 +133,22 @@ def send_daily_newsletter():
     cursor.execute("SELECT email FROM subscribers WHERE status = 'active'")
     subscribers = cursor.fetchall()
     
-    news_content = """
-Architecture News Roundup - Daily Update
-===================================
-
-🏛️ TODAY'S TOP STORIES:
-• AI in architectural design is revolutionizing building layouts
-• Climate solutions show 37% reduction in energy consumption
-• AI-generated designs show 40% energy efficiency improvements
-• Smart cities using AI to optimize infrastructure
-
-🌍 CLIMATE & SUSTAINABILITY:
-• Green building materials market growing 23% annually
-• AI-powered energy optimization systems now standard
-• Solar glass integration increasing efficiency by 18%
-
-✍️ EDITOR'S NOTE:
-Artificial Intelligence continues to reshape architectural practice, 
-bringing unprecedented efficiency while maintaining design excellence.
-
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-"""
+    # Generate tropical news content dynamically
+    try:
+        newsletter_data = news_generator.generate_newsletter()
+        news_content = newsletter_data.get('summary', "News generation failed.")
+    except Exception as e:
+        print(f"❌ Failed to generate news: {e}")
+        news_content = "Today's Tropical Architecture updates are currently unavailable. We'll be back tomorrow!"
     
     for subscriber in subscribers:
         email = subscriber[0]
         
         # Send newsletter
         try:
-            mock_send_email(email, news_content, "Architecture News Daily")
+            mock_send_email(email, news_content, "Tropical Architecture Daily News")
             # For real email, you would replace mock_send_email with your actual send_email logic
-            # send_email(email, news_content, "Architecture News Daily")
+            # send_email(email, news_content, "Tropical Architecture Daily News")
         except Exception as e:
             print(f"❌ Failed to send to {email}: {e}")
     
@@ -171,28 +162,40 @@ bringing unprecedented efficiency while maintaining design excellence.
 # Send welcome email
 def send_welcome_email(recipient):
     body = f"""
-Congratulations on subscribing to Architecture News!
+Congratulations on subscribing to Tropical Architecture News!
 
-You will receive daily updates on:
-• The latest architecture and design news
-• Climate solutions and sustainable building
-• AI in architecture and urban planning
-• Green energy and smart city developments
-• Building regulations and policy updates
+You will receive daily updates every morning at 6 AM on:
+• The latest tropical architecture and design news
+• Passive cooling and ventilation breakthroughs
+• Vernacular materials and climate adaptation
+• Flood-resilient and equatorial urbanism
+• Green energy in tropical climates
 
 Thank you for subscribing!
 
 Best regards,
-The Architecture News Team
+The Tropical Architecture Initiative Team
 """
     # Use mock email
-    mock_send_email(recipient, body, "Welcome to Architecture News!")
+    mock_send_email(recipient, body, "Welcome to Tropical Architecture News!")
+
+def update_frontend_news():
+    """Run the node scraper to update the frontend intelligence feed."""
+    import subprocess
+    print("🔄 Updating frontend intelligence feed...")
+    try:
+        # Run node news-scraper.js from the root directory
+        root_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        subprocess.run(['node', 'news-scraper.js'], cwd=root_dir, check=True)
+        print("✅ Frontend intelligence feed updated successfully.")
+    except Exception as e:
+        print(f"❌ Failed to update frontend feed: {e}")
 
 def run_scheduler():
-    """Run background scheduler for daily emails."""
-    # Schedule the job every day at a specific time (e.g., 08:00)
-    # For testing, we can schedule it every minute, but we'll use daily here.
-    schedule.every().day.at("08:00").do(send_daily_newsletter)
+    """Run background scheduler for daily emails and feed updates."""
+    # Schedule the job every day at a specific time (e.g., 06:00)
+    schedule.every().day.at("06:00").do(send_daily_newsletter)
+    schedule.every().day.at("06:00").do(update_frontend_news)
     
     print("✅ Background scheduler started")
     while True:
