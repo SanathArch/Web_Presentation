@@ -5,6 +5,7 @@
   "main": "news-scraper.js",
   "scripts": {
     "start": "node news-scraper.js",
+    "dev": "concurrently \"node news-scraper.js\" \"python newsletter/subscription_backend.py\" \"browser-sync start --server --files '*.html, *.css, *.js' --port 8000\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -18,5 +19,8 @@
     "axios": "^1.6.0",
     "cheerio": "^1.0.0-rc.12"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "concurrently": "^9.2.1"
+  }
 }

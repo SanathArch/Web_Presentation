@@ -1,103 +1,189 @@
 {
   "priority1": [
     {
-      "title": "Self-Healing Concrete with Bacteria",
-      "description": "Bio-concrete that repairs its own cracks using limestone-producing bacteria, extending structure life in humid tropical conditions.",
-      "source": "Material Innovations Journal",
-      "date": "2026-04-24T10:00:00.000Z",
-      "url": "#",
-      "type": "material"
-    },
-    {
-      "title": "Transparent Wood Insulation",
-      "description": "Engineered wood that provides thermal insulation while allowing light transmission. Perfect for tropical daylighting without heat gain.",
-      "source": "Green Building Materials",
-      "date": "2026-04-23T14:30:00.000Z",
-      "url": "#",
-      "type": "material"
-    },
-    {
+      "title": "Quote: Hassan Fathy",
+      "description": "Architecture must learn from the vernacular, not impose upon it.",
+      "link": "#",
+      "date": "2026-05-12T18:20:03.801Z",
+      "source": "Egyptian architect, pioneer of sustainable vernacular architecture",
       "quote": "Architecture must learn from the vernacular, not impose upon it.",
       "author": "Hassan Fathy",
       "context": "Egyptian architect, pioneer of sustainable vernacular architecture",
       "type": "quote"
     },
     {
-      "title": "Mycelium-Based Insulation Panels",
-      "description": "Grown from mushroom roots, these panels offer excellent thermal and acoustic properties with zero carbon footprint.",
-      "source": "Sustainable Architecture Weekly",
-      "date": "2026-04-22T09:15:00.000Z",
-      "url": "#",
-      "type": "material"
-    },
-    {
+      "title": "Quote: Geoffrey Bawa",
+      "description": "The tropical house must breathe. It must respond to sun, wind, and rain.",
+      "link": "#",
+      "date": "2026-05-12T18:20:03.801Z",
+      "source": "Sri Lankan architect, father of Tropical Modernism",
       "quote": "The tropical house must breathe. It must respond to sun, wind, and rain.",
       "author": "Geoffrey Bawa",
       "context": "Sri Lankan architect, father of Tropical Modernism",
       "type": "quote"
     },
     {
-      "title": "Phase-Change Material Bricks",
-      "description": "Bricks infused with PCM that absorb heat during day and release it at night, naturally regulating indoor temperatures.",
-      "source": "Building Science Review",
-      "date": "2026-04-21T16:45:00.000Z",
-      "url": "#",
+      "title": "Quote: Victor Olgyay",
+      "description": "We must design with climate, not against it.",
+      "link": "#",
+      "date": "2026-05-12T18:20:03.801Z",
+      "source": "Author of 'Design with Climate', bioclimatic architecture pioneer",
+      "quote": "We must design with climate, not against it.",
+      "author": "Victor Olgyay",
+      "context": "Author of 'Design with Climate', bioclimatic architecture pioneer",
+      "type": "quote"
+    },
+    {
+      "title": "Self-Healing Concrete with Bacteria Extends Building Life",
+      "description": "Bio-concrete containing limestone-producing bacteria automatically seals cracks when they form, extending structure lifespan in humid tropical conditions by up to 50%.",
+      "link": "https://www.archdaily.com/tag/materials",
+      "date": "2026-05-12T18:20:32.418Z",
+      "source": "MIT Materials Science",
+      "type": "material"
+    },
+    {
+      "title": "Transparent Wood Insulation - Light Without Heat Gain",
+      "description": "Engineered wood composite provides thermal insulation while allowing 90% light transmission. Perfect for tropical daylighting without heat gain.",
+      "link": "https://www.dezeen.com/tag/sustainable-materials",
+      "date": "2026-05-12T18:20:32.418Z",
+      "source": "Green Building Materials",
+      "type": "material"
+    },
+    {
+      "title": "Mycelium-Based Insulation Panels - Grown Not Made",
+      "description": "Grown from mushroom roots, these panels offer excellent thermal and acoustic properties with zero carbon footprint. Fully compostable at end of life.",
+      "link": "https://www.archdaily.com/tag/sustainability",
+      "date": "2026-05-12T18:20:32.418Z",
+      "source": "Sustainable Architecture Weekly",
       "type": "material"
     }
   ],
   "priority2": [
     {
-      "title": "Passive Cooling Reduces Energy Use by 60% in Singapore Study",
-      "description": "New research shows traditional ventilation techniques combined with modern design can dramatically reduce cooling loads in tropical high-rises.",
+      "title": "Passive Cooling Reduces Energy Use by 60% in Tropical Buildings",
+      "description": "New research demonstrates traditional ventilation techniques combined with modern design can dramatically reduce cooling loads in tropical high-rises without mechanical systems.",
+      "link": "https://www.archdaily.com/tag/sustainability",
+      "date": "2026-05-12T18:20:32.418Z",
       "source": "Building Science Journal",
-      "date": "2026-04-24T08:00:00.000Z",
-      "url": "#",
       "type": "research"
     },
     {
       "title": "Bamboo Housing Project Wins UN Sustainability Award",
-      "description": "Affordable housing development in Indonesia uses locally-sourced bamboo and traditional joinery techniques.",
+      "description": "Affordable housing development in Southeast Asia uses locally-sourced bamboo and traditional joinery techniques to create climate-responsive communities.",
+      "link": "https://www.archdaily.com/tag/sustainability",
+      "date": "2026-05-12T18:20:32.418Z",
       "source": "UN Habitat",
-      "date": "2026-04-23T11:20:00.000Z",
-      "url": "#",
       "type": "project"
     },
     {
       "title": "New Guidelines for Tropical Green Building Certification",
-      "description": "Updated standards now prioritize natural ventilation and local materials over energy-intensive cooling systems.",
+      "description": "Updated standards now prioritize natural ventilation and local materials over energy-intensive cooling systems in tropical climate zones.",
+      "link": "https://www.archdaily.com/tag/sustainability",
+      "date": "2026-05-12T18:20:32.418Z",
       "source": "Green Building Council",
-      "date": "2026-04-22T13:00:00.000Z",
-      "url": "#",
       "type": "standards"
     }
   ],
   "priority3": [
     {
       "title": "AI Optimizes Building Orientation for Tropical Climates",
-      "description": "Machine learning algorithm analyzes sun paths, wind patterns, and topography to suggest optimal building placement.",
+      "description": "Machine learning algorithm analyzes sun paths, wind patterns, and topography to suggest optimal building placement for passive cooling.",
+      "link": "https://www.dezeen.com/tag/technology",
+      "date": "2026-05-12T18:20:32.418Z",
       "source": "Architectural AI Review",
-      "date": "2026-04-24T07:30:00.000Z",
-      "url": "#",
       "type": "ai-tool"
     },
     {
       "title": "Generative Design Creates Climate-Responsive Facades",
-      "description": "New software generates facade patterns that maximize shade while maintaining views and natural light.",
+      "description": "New software generates facade patterns that maximize shade while maintaining views and natural light in tropical environments.",
+      "link": "https://www.dezeen.com/tag/technology",
+      "date": "2026-05-12T18:20:32.418Z",
       "source": "Design Technology Today",
-      "date": "2026-04-23T15:45:00.000Z",
-      "url": "#",
       "type": "ai-tool"
     },
     {
       "title": "Neural Networks Predict Thermal Comfort in Real-Time",
-      "description": "AI system monitors indoor conditions and adjusts passive ventilation systems automatically.",
+      "description": "AI system monitors indoor conditions and adjusts passive ventilation systems automatically for optimal comfort without AC.",
+      "link": "https://www.dezeen.com/tag/technology",
+      "date": "2026-05-12T18:20:32.418Z",
       "source": "Smart Buildings Magazine",
-      "date": "2026-04-22T10:00:00.000Z",
-      "url": "#",
       "type": "ai-research"
     }
   ],
-  "quotes": [
+  "categories": {
+    "materials": [],
+    "quotes": [
+      {
+        "title": "Quote: Hassan Fathy",
+        "description": "Architecture must learn from the vernacular, not impose upon it.",
+        "link": "#",
+        "date": "2026-05-12T18:20:03.801Z",
+        "source": "Egyptian architect, pioneer of sustainable vernacular architecture",
+        "quote": "Architecture must learn from the vernacular, not impose upon it.",
+        "author": "Hassan Fathy",
+        "context": "Egyptian architect, pioneer of sustainable vernacular architecture"
+      },
+      {
+        "title": "Quote: Geoffrey Bawa",
+        "description": "The tropical house must breathe. It must respond to sun, wind, and rain.",
+        "link": "#",
+        "date": "2026-05-12T18:20:03.801Z",
+        "source": "Sri Lankan architect, father of Tropical Modernism",
+        "quote": "The tropical house must breathe. It must respond to sun, wind, and rain.",
+        "author": "Geoffrey Bawa",
+        "context": "Sri Lankan architect, father of Tropical Modernism"
+      },
+      {
+        "title": "Quote: Victor Olgyay",
+        "description": "We must design with climate, not against it.",
+        "link": "#",
+        "date": "2026-05-12T18:20:03.801Z",
+        "source": "Author of 'Design with Climate', bioclimatic architecture pioneer",
+        "quote": "We must design with climate, not against it.",
+        "author": "Victor Olgyay",
+        "context": "Author of 'Design with Climate', bioclimatic architecture pioneer"
+      },
+      {
+        "title": "Quote: Ralph Erskine",
+        "description": "Traditional architecture is sustainable by default. We must rediscover what was never lost.",
+        "link": "#",
+        "date": "2026-05-12T18:20:03.801Z",
+        "source": "British-Swedish architect, climate-responsive design",
+        "quote": "Traditional architecture is sustainable by default. We must rediscover what was never lost.",
+        "author": "Ralph Erskine",
+        "context": "British-Swedish architect, climate-responsive design"
+      },
+      {
+        "title": "Quote: Lloyd Wright",
+        "description": "In the tropics, the wall is not the boundary. Space flows, air circulates.",
+        "link": "#",
+        "date": "2026-05-12T18:20:03.801Z",
+        "source": "Tropical architecture specialist",
+        "quote": "In the tropics, the wall is not the boundary. Space flows, air circulates.",
+        "author": "Lloyd Wright",
+        "context": "Tropical architecture specialist"
+      },
+      {
+        "title": "Quote: Vo Trong Nghia",
+        "description": "Bamboo is the steel of the tropics. It grows fast, it's strong, and it's ours.",
+        "link": "#",
+        "date": "2026-05-12T18:20:03.801Z",
+        "source": "Vietnamese architect, bamboo architecture pioneer",
+        "quote": "Bamboo is the steel of the tropics. It grows fast, it's strong, and it's ours.",
+        "author": "Vo Trong Nghia",
+        "context": "Vietnamese architect, bamboo architecture pioneer"
+      }
+    ],
+    "vernacular": [],
+    "research": [],
+    "fieldStudies": [],
+    "greenCert": [],
+    "generative": [],
+    "machineLearning": [],
+    "parametric": []
+  },
+  "lastUpdated": "2026-05-12T18:19:48.650Z",
+  "allQuotes": [
     {
       "quote": "Architecture must learn from the vernacular, not impose upon it.",
       "author": "Hassan Fathy",
@@ -137,44 +223,52 @@
       "quote": "The best building in the tropics is one that needs no air conditioning.",
       "author": "Kerry Hill",
       "context": "Australian architect, tropical resort specialist"
-    }
-  ],
-  "materials": [
-    {
-      "title": "Self-Healing Concrete with Bacteria",
-      "description": "Bio-concrete that repairs its own cracks using limestone-producing bacteria, extending structure life in humid tropical conditions.",
-      "source": "Material Innovations Journal",
-      "date": "2026-04-24T10:00:00.000Z",
-      "url": "#"
     },
     {
-      "title": "Transparent Wood Insulation",
-      "description": "Engineered wood that provides thermal insulation while allowing light transmission. Perfect for tropical daylighting without heat gain.",
+      "quote": "Vernacular architecture is the manifestation of human adaptation to environment.",
+      "author": "Paul Oliver",
+      "context": "Author of 'Encyclopedia of Vernacular Architecture'"
+    },
+    {
+      "quote": "Sustainability is no longer an option. It is a necessity for survival.",
+      "author": "Balkrishna Doshi",
+      "context": "Indian architect, Pritzker Prize winner"
+    },
+    {
+      "quote": "We need to rediscover the wisdom of traditional building before it is too late.",
+      "author": "Hassan Fathy",
+      "context": "Author of 'Architecture for the Poor'"
+    },
+    {
+      "quote": "The future of architecture lies in the intelligent use of local materials.",
+      "author": "Laurie Baker",
+      "context": "British-Indian architect, cost-effective housing pioneer"
+    }
+  ],
+  "allMaterials": [
+    {
+      "title": "Self-Healing Concrete with Bacteria Extends Building Life",
+      "description": "Bio-concrete containing limestone-producing bacteria automatically seals cracks when they form, extending structure lifespan in humid tropical conditions by up to 50%.",
+      "link": "https://www.archdaily.com/tag/materials",
+      "date": "2026-05-12T18:20:32.418Z",
+      "source": "MIT Materials Science",
+      "type": "material"
+    },
+    {
+      "title": "Transparent Wood Insulation - Light Without Heat Gain",
+      "description": "Engineered wood composite provides thermal insulation while allowing 90% light transmission. Perfect for tropical daylighting without heat gain.",
+      "link": "https://www.dezeen.com/tag/sustainable-materials",
+      "date": "2026-05-12T18:20:32.418Z",
       "source": "Green Building Materials",
-      "date": "2026-04-23T14:30:00.000Z",
-      "url": "#"
+      "type": "material"
     },
     {
-      "title": "Mycelium-Based Insulation Panels",
-      "description": "Grown from mushroom roots, these panels offer excellent thermal and acoustic properties with zero carbon footprint.",
+      "title": "Mycelium-Based Insulation Panels - Grown Not Made",
+      "description": "Grown from mushroom roots, these panels offer excellent thermal and acoustic properties with zero carbon footprint. Fully compostable at end of life.",
+      "link": "https://www.archdaily.com/tag/sustainability",
+      "date": "2026-05-12T18:20:32.418Z",
       "source": "Sustainable Architecture Weekly",
-      "date": "2026-04-22T09:15:00.000Z",
-      "url": "#"
-    },
-    {
-      "title": "Phase-Change Material Bricks",
-      "description": "Bricks infused with PCM that absorb heat during day and release it at night, naturally regulating indoor temperatures.",
-      "source": "Building Science Review",
-      "date": "2026-04-21T16:45:00.000Z",
-      "url": "#"
-    },
-    {
-      "title": "Recycled Plastic Lumber",
-      "description": "Weather-resistant lumber made from ocean plastics. Ideal for tropical outdoor structures, resistant to rot and insects.",
-      "source": "Eco Materials Database",
-      "date": "2026-04-20T12:00:00.000Z",
-      "url": "#"
+      "type": "material"
     }
-  ],
-  "lastUpdated": "2026-04-24T10:00:00.000Z"
+  ]
 }
